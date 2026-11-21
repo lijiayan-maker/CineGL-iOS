@@ -67,3 +67,16 @@ typedef struct {
     simd_float3 color;           // 每个点贡献的亮度（很小，靠叠加变亮）
     simd_int2 sourceSize;
 } CINWaveformUniforms;
+
+/** 模拟器的虚拟相机：画一张「传感器方向」的场景（只在模拟器上用）。 */
+typedef struct {
+    simd_float4 monitorRect;     // 后置场景里显示器屏幕的位置（直立场景坐标，左上原点）：x0, y0, x1, y1
+    float time;                  // 秒，用来让画面动起来
+    float gain;                  // 曝光增益（线性）：ISO × 快门相对「ISO 200、1/100s」的倍数
+    float zoom;                  // 数码变焦
+    float blur;                  // 失焦程度（采样的 mip 级别）
+    float torch;                 // 补光 0 / 1
+    float uprightAspect;         // 直立画面宽 / 高
+    float sceneAspect;           // 场景图宽 / 高
+    int front;                   // 1 = 前置的彩色场景
+} CINSimSceneUniforms;

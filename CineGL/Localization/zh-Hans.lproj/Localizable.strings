@@ -1,0 +1,119 @@
+/* 简体中文（zh-Hans：中国大陆、新加坡等）。繁体中文和其他语言走 en.lproj 里的英文。 */
+
+"app_name" = "CineGL";
+
+/* 拍摄模式 */
+"mode_photo" = "照片";
+"mode_video" = "视频";
+
+/* 工具栏 */
+"tool_focus" = "对焦";
+"tool_wb" = "白平衡";
+"tool_iso" = "ISO";
+"tool_shutter" = "快门";
+"tool_ev" = "曝光补偿";
+"reset" = "重置";
+
+/* 刻度盘 */
+"dial_shutter" = "快门 %1$@";
+"dial_ev" = "曝光补偿 %1$@ EV";
+"dial_focus" = "对焦 %1$@";
+"dial_focus_unsupported" = "此镜头不支持手动对焦";
+"dial_kelvin" = "色温 %1$dK";
+"dial_tint" = "色调";
+
+/* 影调面板 */
+"looks" = "影调";
+"look_imported" = "导入的 LUT";
+"import_cube" = "导入 .cube";
+"fx_look_strength" = "影调强度";
+"fx_halation" = "光晕";
+"fx_mist" = "柔光";
+"fx_grain" = "颗粒";
+"fx_grain_size" = "颗粒大小";
+"fx_vignette" = "暗角";
+"fx_aberration" = "色散";
+
+/* 设置面板 */
+"settings" = "设置";
+"settings_aspect" = "画幅";
+"settings_resolution_fps" = "分辨率 / 帧率";
+"settings_log" = "Log";
+"log_off" = "关";
+"log_gpu" = "GPU 模拟";
+"log_isp" = "Apple Log";
+"log_off_desc" = "相机直出的 Rec.709 画面直接进影调。";
+"log_gpu_desc" = "在 GPU 里把画面转成 CineLog 灰片：工作流和真 Log 一样，但宽容度不会凭空变大。";
+"log_isp_desc" = "让相机直接输出 Apple Log（iPhone 15 Pro 及以上），再在 GPU 里转成 CineLog，高光层次比直出更多。";
+"burn_in" = "LUT 烧录";
+"burn_in_desc" = "关闭后录的是 Log 原片，屏幕上仍然套着影调监看";
+"show_signal" = "显示 Log 原片";
+"show_signal_desc" = "屏幕上看灰片（不影响录制）";
+"settings_assist" = "辅助";
+"assist_grid" = "网格";
+"assist_level" = "水平仪";
+"assist_zebra" = "斑马纹";
+"assist_zebra_desc" = "标出过曝区域";
+"assist_peaking" = "峰值对焦";
+"assist_peaking_desc" = "合焦的边缘标红";
+"assist_waveform" = "波形图";
+"assist_waveform_desc" = "亮度分布示波器";
+"stabilization" = "防抖";
+"settings_footer" = "CineGL · Metal 渲染学习项目";
+
+/* 画幅 */
+"aspect_16x9" = "16:9";
+"aspect_4x3" = "4:3 全开";
+"aspect_1x1" = "1:1";
+"aspect_239" = "2.39:1";
+
+/* 预览角标 */
+"chip_log" = "LOG";
+"chip_burn_in" = "LUT 烧录";
+"chip_monitor_only" = "LUT 仅监看";
+"chip_signal" = "Log 原片";
+
+/* 权限 / 相册 */
+"permission_camera" = "需要相机权限才能取景";
+"permission_grant" = "授权";
+"no_viewer_app" = "没有可以打开它的应用";
+"error_photos_denied" = "没有相册写入权限";
+
+/* 提示 */
+"toast_controls_reset" = "参数已恢复自动";
+"toast_effects_reset" = "影调强度与效果已恢复默认";
+"toast_lut_read_failed" = "读取 LUT 失败";
+"toast_lut_import_failed" = "导入失败：%1$@";
+"toast_lut_imported" = "已导入 %1$@";
+"error_no_camera" = "没有找到可用的相机";
+"error_camera_open" = "打开相机失败";
+"error_no_preview_size" = "相机没有可用的预览尺寸";
+"error_session" = "相机会话失败";
+"error_camera_not_ready" = "相机未就绪";
+"error_photo_decode" = "照片解码失败";
+"error_gpu" = "GPU 处理失败";
+"error_save" = "保存失败";
+"error_photo" = "拍照失败";
+"error_record_start" = "无法开始录像：%1$@";
+"error_record_save" = "录像保存失败";
+
+/* 相机 / 录像底层报错 */
+"error_camera_in_use" = "相机被其他应用占用";
+"error_camera_open_code" = "打开相机失败（错误码 %1$d）";
+"error_camera_code" = "相机出错（错误码 %1$d）";
+"error_camera_not_open" = "相机未打开";
+"error_session_config" = "相机会话配置失败";
+"error_photo_mode" = "当前模式不能拍照";
+"error_capture_code" = "拍照失败（%1$d）";
+"error_video_file" = "无法创建视频文件";
+
+/* .cube 解析失败 */
+"cube_error_size_range" = "LUT_3D_SIZE 超出范围（2..256）";
+"cube_error_1d" = "暂不支持 1D LUT";
+"cube_error_domain" = "第 %1$d 行 DOMAIN 格式错误";
+"cube_error_data" = "第 %1$d 行无法解析为 3 个数字";
+"cube_error_data_before_size" = "第 %1$d 行：数据出现在 LUT_3D_SIZE 之前";
+"cube_error_count" = "数据行数 %1$d 与 LUT_3D_SIZE 不符（应为 %2$d）";
+"cube_error_domain_order" = "DOMAIN_MAX 必须大于 DOMAIN_MIN";
+"cube_error_missing_size" = "缺少 LUT_3D_SIZE";
+"cube_error_unknown" = "无法识别的 .cube 文件";

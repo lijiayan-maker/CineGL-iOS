@@ -49,7 +49,7 @@ static NSArray<CINLook *> *CINBuiltInLooks(void) {
     NSMutableArray<CINLook *> *looks = [NSMutableArray array];
 
     // 原生：什么都不做，用来单独看「镜头 + 胶片效果」
-    [looks addObject:CINRecipeLook(@"natural", @"原生", @"Natural", CINLookRecipeDefault())];
+    [looks addObject:CINRecipeLook(@"natural", @"\u539f\u751f", @"Natural", CINLookRecipeDefault())];
 
     {   // 青橙：好莱坞大片的经典配色，肤色推橙、环境推青
         CINLookRecipe r = CINLookRecipeDefault();
@@ -62,7 +62,7 @@ static NSArray<CINLook *> *CINBuiltInLooks(void) {
         r.shadowTintAmount = 0.10f;
         r.highlightTint = CINVec3Make(1.0f, 0.62f, 0.3f);
         r.highlightTintAmount = 0.06f;
-        [looks addObject:CINRecipeLook(@"teal_orange", @"青橙", @"Teal & Orange", r)];
+        [looks addObject:CINRecipeLook(@"teal_orange", @"\u9752\u6a59", @"Teal & Orange", r)];
     }
     {   // 暖阳：低反差、暖白、柔和的人像胶片感
         CINLookRecipe r = CINLookRecipeDefault();
@@ -74,7 +74,7 @@ static NSArray<CINLook *> *CINBuiltInLooks(void) {
         r.highlightTint = CINVec3Make(1.0f, 0.85f, 0.65f);
         r.highlightTintAmount = 0.06f;
         r.fade = 0.035f;
-        [looks addObject:CINRecipeLook(@"warm_film", @"暖阳", @"Warm Film", r)];
+        [looks addObject:CINRecipeLook(@"warm_film", @"\u6696\u9633", @"Warm Film", r)];
     }
     {   // 冷冽：北欧风，低饱和、冷影
         CINLookRecipe r = CINLookRecipeDefault();
@@ -84,7 +84,7 @@ static NSArray<CINLook *> *CINBuiltInLooks(void) {
         r.shadowTint = CINVec3Make(0.2f, 0.4f, 0.75f);
         r.shadowTintAmount = 0.08f;
         r.fade = 0.03f;
-        [looks addObject:CINRecipeLook(@"nordic", @"冷冽", @"Nordic", r)];
+        [looks addObject:CINRecipeLook(@"nordic", @"\u51b7\u51bd", @"Nordic", r)];
     }
     {   // 褪色：低对比、黑位发灰、带一点青绿
         CINLookRecipe r = CINLookRecipeDefault();
@@ -95,7 +95,7 @@ static NSArray<CINLook *> *CINBuiltInLooks(void) {
         r.shadowTintAmount = 0.07f;
         r.fade = 0.09f;
         r.whitePoint = 0.96f;
-        [looks addObject:CINRecipeLook(@"matte", @"褪色", @"Matte", r)];
+        [looks addObject:CINRecipeLook(@"matte", @"\u892a\u8272", @"Matte", r)];
     }
     {   // 银盐：红滤镜味道的高反差黑白
         CINLookRecipe r = CINLookRecipeDefault();
@@ -103,7 +103,7 @@ static NSArray<CINLook *> *CINBuiltInLooks(void) {
         r.monoWeights = CINVec3Make(0.42f, 0.48f, 0.10f);
         r.contrast = 1.28f;
         r.fade = 0.015f;
-        [looks addObject:CINRecipeLook(@"silver", @"银盐", @"Silver", r)];
+        [looks addObject:CINRecipeLook(@"silver", @"\u94f6\u76d0", @"Silver", r)];
     }
     {   // 霓虹：夜景用，红推品、蓝推青，冷暖对撞
         CINLookRecipe r = CINLookRecipeDefault();
@@ -116,7 +116,7 @@ static NSArray<CINLook *> *CINBuiltInLooks(void) {
         r.shadowTintAmount = 0.08f;
         r.highlightTint = CINVec3Make(1.0f, 0.4f, 0.75f);
         r.highlightTintAmount = 0.05f;
-        [looks addObject:CINRecipeLook(@"neon", @"霓虹", @"Neon Night", r)];
+        [looks addObject:CINRecipeLook(@"neon", @"\u9713\u8679", @"Neon Night", r)];
     }
     {   // 森屿：绿色压成橄榄、整体偏暖、轻微褪色
         CINLookRecipe r = CINLookRecipeDefault();
@@ -127,7 +127,7 @@ static NSArray<CINLook *> *CINBuiltInLooks(void) {
         r.highlightTint = CINVec3Make(1.0f, 0.9f, 0.6f);
         r.highlightTintAmount = 0.05f;
         r.fade = 0.03f;
-        [looks addObject:CINRecipeLook(@"forest", @"森屿", @"Forest", r)];
+        [looks addObject:CINRecipeLook(@"forest", @"\u68ee\u5c7f", @"Forest", r)];
     }
     {   // 黄昏：大面积暖橙，亮部金色
         CINLookRecipe r = CINLookRecipeDefault();
@@ -139,14 +139,14 @@ static NSArray<CINLook *> *CINBuiltInLooks(void) {
         r.highlightTintAmount = 0.08f;
         r.shadowTint = CINVec3Make(0.45f, 0.25f, 0.4f);
         r.shadowTintAmount = 0.05f;
-        [looks addObject:CINRecipeLook(@"golden_hour", @"黄昏", @"Golden Hour", r)];
+        [looks addObject:CINRecipeLook(@"golden_hour", @"\u9ec4\u660f", @"Golden Hour", r)];
     }
     {   // 漂白：跳过漂白工艺的银盐残留——低饱和、高反差、金属感
         CINLookRecipe r = CINLookRecipeDefault();
         r.saturation = 0.85f;
         r.contrast = 1.12f;
         r.bleach = 0.75f;
-        [looks addObject:CINRecipeLook(@"bleach", @"漂白", @"Bleach Bypass", r)];
+        [looks addObject:CINRecipeLook(@"bleach", @"\u6f02\u767d", @"Bleach Bypass", r)];
     }
     {   // 浓彩：反转片式的浓郁红蓝、深阴影
         CINLookRecipe r = CINLookRecipeDefault();
@@ -156,7 +156,7 @@ static NSArray<CINLook *> *CINBuiltInLooks(void) {
         CINAddHue(&r, 0.f, 35.f, 0.f, 1.2f);     // 红更浓
         CINAddHue(&r, 225.f, 40.f, 5.f, 1.2f);   // 蓝更深
         CINAddHue(&r, 55.f, 25.f, -6.f, 0.9f);   // 黄略压
-        [looks addObject:CINRecipeLook(@"chrome", @"浓彩", @"Rich Chrome", r)];
+        [looks addObject:CINRecipeLook(@"chrome", @"\u6d53\u5f69", @"Rich Chrome", r)];
     }
     return looks;
 }

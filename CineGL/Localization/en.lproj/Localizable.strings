@@ -1,0 +1,123 @@
+/*
+  默认语言是英文：系统语言不是简体中文（包括繁体中文）时都用这里的文案。
+  简体中文在 zh-Hans.lproj/Localizable.strings，新增文案两边都要加（单测会检查两边的键和占位符是否一致）。
+  键名和安卓版 res/values/strings.xml 一一对应。
+*/
+
+"app_name" = "CineGL";
+
+/* 拍摄模式 */
+"mode_photo" = "Photo";
+"mode_video" = "Video";
+
+/* 工具栏 */
+"tool_focus" = "Focus";
+"tool_wb" = "WB";
+"tool_iso" = "ISO";
+"tool_shutter" = "Shutter";
+"tool_ev" = "Exposure";
+"reset" = "Reset";
+
+/* 刻度盘 */
+"dial_shutter" = "Shutter %1$@";
+"dial_ev" = "Exposure %1$@ EV";
+"dial_focus" = "Focus %1$@";
+"dial_focus_unsupported" = "Manual focus not supported";
+"dial_kelvin" = "Color temp %1$dK";
+"dial_tint" = "Tint";
+
+/* 影调面板 */
+"looks" = "Looks";
+"look_imported" = "Imported LUT";
+"import_cube" = "Import .cube";
+"fx_look_strength" = "Look strength";
+"fx_halation" = "Halation";
+"fx_mist" = "Diffusion";
+"fx_grain" = "Grain";
+"fx_grain_size" = "Grain size";
+"fx_vignette" = "Vignette";
+"fx_aberration" = "Aberration";
+
+/* 设置面板 */
+"settings" = "Settings";
+"settings_aspect" = "Aspect ratio";
+"settings_resolution_fps" = "Resolution / Frame rate";
+"settings_log" = "Log";
+"log_off" = "Off";
+"log_gpu" = "GPU emulation";
+"log_isp" = "Apple Log";
+"log_off_desc" = "The camera's Rec.709 image goes straight into the look.";
+"log_gpu_desc" = "Converts the image to a flat CineLog signal on the GPU. Same workflow as real log, but no extra dynamic range.";
+"log_isp_desc" = "The camera outputs Apple Log directly (iPhone 15 Pro and later), converted to CineLog on the GPU, keeping more highlight detail than the standard image.";
+"burn_in" = "Burn in LUT";
+"burn_in_desc" = "When off, files keep the clean log signal; the screen still shows the look";
+"show_signal" = "Show log signal";
+"show_signal_desc" = "View the flat log image on screen (recording unaffected)";
+"settings_assist" = "Monitoring";
+"assist_grid" = "Grid";
+"assist_level" = "Level";
+"assist_zebra" = "Zebra";
+"assist_zebra_desc" = "Mark overexposed areas";
+"assist_peaking" = "Focus peaking";
+"assist_peaking_desc" = "Outline in-focus edges in red";
+"assist_waveform" = "Waveform";
+"assist_waveform_desc" = "Luma waveform scope";
+"stabilization" = "Stabilization";
+"settings_footer" = "CineGL · A Metal rendering study project";
+
+/* 画幅 */
+"aspect_16x9" = "16:9";
+"aspect_4x3" = "4:3 Full";
+"aspect_1x1" = "1:1";
+"aspect_239" = "2.39:1";
+
+/* 预览角标 */
+"chip_log" = "LOG";
+"chip_burn_in" = "LUT burned in";
+"chip_monitor_only" = "LUT monitor only";
+"chip_signal" = "Log view";
+
+/* 权限 / 相册 */
+"permission_camera" = "Camera permission is needed to shoot";
+"permission_grant" = "Allow";
+"no_viewer_app" = "No app can open this file";
+"error_photos_denied" = "No permission to save to Photos";
+
+/* 提示 */
+"toast_controls_reset" = "Manual controls back to auto";
+"toast_effects_reset" = "Look strength and effects reset";
+"toast_lut_read_failed" = "Couldn't read the LUT file";
+"toast_lut_import_failed" = "Import failed: %1$@";
+"toast_lut_imported" = "Imported %1$@";
+"error_no_camera" = "No camera available";
+"error_camera_open" = "Couldn't open the camera";
+"error_no_preview_size" = "The camera has no usable preview size";
+"error_session" = "Camera session failed";
+"error_camera_not_ready" = "Camera not ready";
+"error_photo_decode" = "Couldn't decode the photo";
+"error_gpu" = "GPU processing failed";
+"error_save" = "Couldn't save";
+"error_photo" = "Couldn't take the photo";
+"error_record_start" = "Couldn't start recording: %1$@";
+"error_record_save" = "Couldn't save the video";
+
+/* 相机 / 录像底层报错 */
+"error_camera_in_use" = "The camera is in use by another app";
+"error_camera_open_code" = "Couldn't open the camera (error %1$d)";
+"error_camera_code" = "Camera error (code %1$d)";
+"error_camera_not_open" = "The camera is not open";
+"error_session_config" = "Couldn't configure the camera session";
+"error_photo_mode" = "Can't take photos in this mode";
+"error_capture_code" = "Capture failed (%1$d)";
+"error_video_file" = "Couldn't create the video file";
+
+/* .cube 解析失败（错误码见 Core/CINCubeLut.h 的 CINCubeError） */
+"cube_error_size_range" = "LUT_3D_SIZE must be between 2 and 256";
+"cube_error_1d" = "1D LUTs aren't supported";
+"cube_error_domain" = "Line %1$d: DOMAIN needs 3 numbers";
+"cube_error_data" = "Line %1$d: expected 3 numbers";
+"cube_error_data_before_size" = "Line %1$d: data appears before LUT_3D_SIZE";
+"cube_error_count" = "Found %1$d data lines, LUT_3D_SIZE needs %2$d";
+"cube_error_domain_order" = "DOMAIN_MAX must be greater than DOMAIN_MIN";
+"cube_error_missing_size" = "LUT_3D_SIZE is missing";
+"cube_error_unknown" = "Unrecognized .cube file";
