@@ -39,6 +39,17 @@
                ReferencedContainer = "container:CineGL.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A1000000000000000000C001"
+               BuildableName = "CineGLUITests.xctest"
+               BlueprintName = "CineGLUITests"
+               ReferencedContainer = "container:CineGL.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

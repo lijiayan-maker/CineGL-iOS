@@ -14,11 +14,19 @@
 			remoteGlobalIDString = A1000000000000000000A001;
 			remoteInfo = CineGL;
 		};
+		A1000000000000000000C00B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1000000000000000000F001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1000000000000000000A001;
+			remoteInfo = CineGL;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A1000000000000000000A002 /* CineGL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CineGL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1000000000000000000B002 /* CineGLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CineGLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1000000000000000000C002 /* CineGLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CineGLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -45,6 +53,11 @@
 			path = CineGLTests;
 			sourceTree = "<group>";
 		};
+		A1000000000000000000C003 /* CineGLUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CineGLUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +75,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1000000000000000000C006 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -70,6 +90,7 @@
 			children = (
 				A1000000000000000000A003 /* CineGL */,
 				A1000000000000000000B003 /* CineGLTests */,
+				A1000000000000000000C003 /* CineGLUITests */,
 				A1000000000000000000F003 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,6 +100,7 @@
 			children = (
 				A1000000000000000000A002 /* CineGL.app */,
 				A1000000000000000000B002 /* CineGLTests.xctest */,
+				A1000000000000000000C002 /* CineGLUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,6 +153,29 @@
 			productReference = A1000000000000000000B002 /* CineGLTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A1000000000000000000C001 /* CineGLUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1000000000000000000C008 /* Build configuration list for PBXNativeTarget "CineGLUITests" */;
+			buildPhases = (
+				A1000000000000000000C005 /* Sources */,
+				A1000000000000000000C006 /* Frameworks */,
+				A1000000000000000000C007 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1000000000000000000C00C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A1000000000000000000C003 /* CineGLUITests */,
+			);
+			name = CineGLUITests;
+			packageProductDependencies = (
+			);
+			productName = CineGLUITests;
+			productReference = A1000000000000000000C002 /* CineGLUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -144,6 +189,10 @@
 						CreatedOnToolsVersion = 16.2;
 					};
 					A1000000000000000000B001 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = A1000000000000000000A001;
+					};
+					A1000000000000000000C001 = {
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = A1000000000000000000A001;
 					};
@@ -166,6 +215,7 @@
 			targets = (
 				A1000000000000000000A001 /* CineGL */,
 				A1000000000000000000B001 /* CineGLTests */,
+				A1000000000000000000C001 /* CineGLUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -179,6 +229,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A1000000000000000000B007 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1000000000000000000C007 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -202,6 +259,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1000000000000000000C005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -209,6 +273,11 @@
 			isa = PBXTargetDependency;
 			target = A1000000000000000000A001 /* CineGL */;
 			targetProxy = A1000000000000000000B00B /* PBXContainerItemProxy */;
+		};
+		A1000000000000000000C00C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1000000000000000000A001 /* CineGL */;
+			targetProxy = A1000000000000000000C00B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -403,6 +472,42 @@
 			};
 			name = Release;
 		};
+		A1000000000000000000C009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"CIN_SRCROOT=\\\"$(SRCROOT)\\\"",
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycro.cinegl.ios.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = CineGL;
+			};
+			name = Debug;
+		};
+		A1000000000000000000C00A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"CIN_SRCROOT=\\\"$(SRCROOT)\\\"",
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycro.cinegl.ios.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = CineGL;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -420,6 +525,15 @@
 			buildConfigurations = (
 				A1000000000000000000B009 /* Debug */,
 				A1000000000000000000B00A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1000000000000000000C008 /* Build configuration list for PBXNativeTarget "CineGLUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1000000000000000000C009 /* Debug */,
+				A1000000000000000000C00A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
