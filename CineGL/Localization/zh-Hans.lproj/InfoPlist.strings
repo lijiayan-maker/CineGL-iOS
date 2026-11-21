@@ -1,0 +1,4 @@
+/* 系统权限弹窗里的说明文字（简体中文）。 */
+"NSCameraUsageDescription" = "CineGL 需要使用相机来取景、拍照和录像。";
+"NSMicrophoneUsageDescription" = "录像时录制声音，并在取景界面显示麦克风电平。";
+"NSPhotoLibraryAddUsageDescription" = "把拍摄的照片和视频存入系统相册。";

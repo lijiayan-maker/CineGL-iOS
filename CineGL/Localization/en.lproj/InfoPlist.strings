@@ -1,0 +1,4 @@
+/* 系统权限弹窗里的说明文字（英文）。简体中文在 zh-Hans.lproj/InfoPlist.strings。 */
+"NSCameraUsageDescription" = "CineGL uses the camera to frame, take photos and record video.";
+"NSMicrophoneUsageDescription" = "CineGL records sound with your videos and shows the audio meter.";
+"NSPhotoLibraryAddUsageDescription" = "CineGL saves your photos and videos to the photo library.";
