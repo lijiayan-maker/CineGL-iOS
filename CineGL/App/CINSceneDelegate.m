@@ -1,6 +1,6 @@
 #import "CINSceneDelegate.h"
 
-#import "CINRootViewController.h"
+#import "CINCameraViewController.h"
 
 @implementation CINSceneDelegate
 
@@ -9,7 +9,7 @@
     UIWindow *window = [[UIWindow alloc] initWithWindowScene:(UIWindowScene *)scene];
     window.backgroundColor = UIColor.blackColor;
     window.overrideUserInterfaceStyle = UIUserInterfaceStyleDark;
-    window.rootViewController = [[CINRootViewController alloc] init];
+    window.rootViewController = [[CINCameraViewController alloc] init];
     [window makeKeyAndVisible];
     self.window = window;
 }
